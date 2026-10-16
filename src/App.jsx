@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import Profile from "./components/Profile";
 
 function App() {
   const [followers, setFollowers] = useState(0);
@@ -37,6 +38,7 @@ function App() {
   return (
     <div className="flex min-h-screen flex-col bg-[#FAF3E1] text-[#222222]">
       <Navbar />
+      <Profile />
 
       <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
